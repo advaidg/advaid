@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/advaid/static/css/main.7c8b3636.css",
+    "main.js": "/advaid/static/js/main.7e935b8e.js",
+    "static/js/453.4725597f.chunk.js": "/advaid/static/js/453.4725597f.chunk.js",
+    "static/media/Hagrid-Regular-trial.ttf": "/advaid/static/media/Hagrid-Regular-trial.f07c99091e4cc944f50c.ttf",
+    "static/media/NeueMachina-Regular.otf": "/advaid/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
+    "index.html": "/advaid/index.html",
+    "main.7c8b3636.css.map": "/advaid/static/css/main.7c8b3636.css.map",
+    "main.7e935b8e.js.map": "/advaid/static/js/main.7e935b8e.js.map",
+    "453.4725597f.chunk.js.map": "/advaid/static/js/453.4725597f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c8b3636.css",
+    "static/js/main.7e935b8e.js"
+  ]
+}
