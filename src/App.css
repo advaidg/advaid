@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+/* Importing Fonts */
+@font-face {
+  font-family: 'Hagrid';
+  src: url('/public/hagrid/Hagrid-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hagrid Italic';
+  src: url('/public/hagrid/Hagrid-Regular-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/public/Neue/NeueMachina-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Neue Machina', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1, h2, h3 {
+  font-family: 'Hagrid', sans-serif;
+  color: #6df0c0;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 85vh;
 }
 
-.App-link {
-  color: #61dafb;
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-@keyframes App-logo-spin {
+.animate-in-view {
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
   from {
-    transform: rotate(0deg);
+      opacity: 0;
+      transform: translateY(30px);
   }
   to {
-    transform: rotate(360deg);
+      opacity: 1;
+      transform: translateY(0);
   }
 }

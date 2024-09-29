@@ -1,0 +1,81 @@
+/* Balanced screen layout */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Slightly smaller than full screen */
+    padding: 40px;
+    background-color: #000;
+    color: #6df0c0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5em; /* More balanced heading size */
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 30px; /* Moderate spacing between icons */
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    width: 60px; /* Adjusted icon size */
+    height: 60px; 
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.15); /* Slightly smaller hover zoom */
+    filter: brightness(1.15); /* Slight brightness effect */
+  }
+  
+  .email-link {
+    font-size: 1.7em; /* Adjusted email link size */
+    text-decoration: none;
+    color: #6df0c0;
+  }
+  
+  .email-link:hover {
+    color: #fff;
+  }
+  
+  .circuit-image img {
+    margin-top: 30px; /* Adjusted spacing */
+    width: 200px; /* Moderate circuit image size */
+    transition: transform 0.3s ease;
+  }
+  
+  .circuit-image img:hover {
+    transform: rotate(360deg); /* Hover rotation */
+  }
+  
+  /* Responsive layout adjustments for smaller screens */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2em;
+    }
+  
+    .social-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .email-link {
+      font-size: 1.5em;
+    }
+  
+    .circuit-image img {
+      width: 150px;
+    }
+  }
+  

@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Credentials from './components/Credentials';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Scroll animation trigger (same as in script.js)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in-view');
+        }
+      });
+    });
+
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <About />
+      <Credentials />
+      <Projects />
+      <Contact />
     </div>
   );
 }

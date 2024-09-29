@@ -1,0 +1,71 @@
+/* Full-width dark grey background for Projects section */
+.projects-container {
+    padding: 50px 0;
+    background-color: #111; /* Dark background matching Certifications */
+    color: #fff;
+    width: 100vw; /* Full-width background */
+    margin: 0;
+}
+
+.projects-content {
+    padding: 0 10%; /* Add padding on both sides */
+    max-width: 100%; /* Full width for the content */
+}
+
+/* Headings styling (same as Certifications) */
+h2, h3 {
+    font-family: 'Hagrid', sans-serif;
+    color: #6df0c0; /* Greenish color for headings */
+    margin-bottom: 30px;
+    text-align: left; /* Left-align headings */
+}
+
+/* Grid setup for Projects and Experience */
+.projects-grid, .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    grid-gap: 20px; /* Add space between grid items */
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Project and Experience item cards */
+.project-item, .experience-item {
+    background: #172a3a; /* Dark blue-grey background matching Certifications */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px; /* Ensure equal height for cards */
+}
+
+/* Card text styling */
+.card-inner {
+    text-align: center;
+    font-family: 'Neue Machina', sans-serif;
+    color: #6df0c0; /* Same greenish color for text as Certifications */
+}
+
+/* Hover effect with color change */
+.project-item:hover, .experience-item:hover {
+    background-color: #6df0c0; /* Greenish background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.project-item:hover .card-inner, .experience-item:hover .card-inner {
+    color: #111; /* Dark text on hover to match Certifications hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+    .projects-grid, .experience-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .projects-content {
+        padding: 0 5%; /* Reduce padding on smaller screens */
+    }
+}

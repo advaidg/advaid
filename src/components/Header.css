@@ -1,0 +1,127 @@
+/* Container for social icons */
+.social-icons {
+
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 15%;
+    padding-bottom: 0;
+    top: 25px;
+    display: flex;
+    gap: 20px;
+}
+/* Styling for the quote */
+.quote-container {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    max-width: 50%; /* Adjust this based on the width of the profile image */
+    text-align: right; /* Align text to the right */
+}
+
+.quote {
+    font-size: 1.7rem;
+    font-family: 'Hagrid Italic', sans-serif; /* Hagrid for headings */
+    color: #6df0c0;
+    margin-bottom: 0.5rem;
+        /* Text spacing */
+        letter-spacing: 0.08em; /* Adjust the letter spacing */
+        line-height: 1.6; /* Adjust the vertical space between lines */
+        word-spacing: 0.06em; /* Adjust the space between words */
+}
+h1 {
+    font-size: 6rem !important; /* Forces the font-size change */
+}
+h1 {
+    font-family: 'Hagrid', sans-serif; /* Hagrid for headings */
+    color: #6df0c0;
+    margin-bottom: 0.9rem;
+    font-weight: 100; /* Adjust the font-weight to a lighter value */
+}
+h1 .white-text {
+    color: #fff; /* White color for "Hi, I'm" */
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* General header styles (unchanged) */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 5%;
+    height: 100vh;
+}
+
+.text-container {
+    max-width: 40%;
+padding-left: 20%;
+padding-right: 20%;
+
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Hagrid', sans-serif; /* Hagrid for headings */
+    color: #6df0c0;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    font-family: 'Neue Machina', sans-serif; /* Neue Machina for body text */
+}
+
+.cta-button {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #6df0c0;
+    color: #6df0c0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #6df0c0;
+    color: #000;
+}
+
+.image-container {
+    max-width: 25%;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-in-view {
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
