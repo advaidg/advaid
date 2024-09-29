@@ -26,7 +26,7 @@ const Header = () => {
         <div className="description">
           and I'm a DevOps Specialist and Java API Developer with expertise in Kubernetes, OpenShift, and automation technologies.
         </div>
-        <a href="#about" className="cta-button">
+        <a href="#contact" className="cta-button">
           WORK WITH ME
         </a>
       </div>
