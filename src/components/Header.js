@@ -7,13 +7,13 @@ const Header = () => {
       {/* Icons container */}
       <div className="social-icons">
         <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
-          <img src="/git.png" alt="GitHub" />
+          <img src="./git.png" alt="GitHub" />
         </a>
         <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-          <img src="/li.png" alt="LinkedIn" />
+          <img src="./li.png" alt="LinkedIn" />
         </a>
         <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-          <img src="/x.png" alt="Twitter" />
+          <img src="./x.png" alt="Twitter" />
         </a>
       </div>
 
